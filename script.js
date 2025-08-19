@@ -254,9 +254,9 @@ function downloadResume() {
 
 // Open Gmail function
 function openGmail() {
-    const email = 'john.doe@email.com';
+    const email = 'palak19priya@email.com';
     const subject = 'Hello from your portfolio!';
-    const body = 'Hi John,\n\nI visited your portfolio and would like to connect.\n\nBest regards,';
+    const body = 'Hi Palak,\n\nI visited your portfolio and would like to connect.\n\nBest regards,';
     
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
@@ -313,3 +313,4 @@ function preloadImages() {
 
 
 preloadImages();
+

@@ -3,144 +3,639 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Portfolio - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            
-            <br><br>
-            <div class="oval-frame">
-                <img src="resPic2.jpg" alt="Your Image" class="center">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
             </div>
-            <p class="p1">A 3rd year engineering student pursuing B.Tech degree in Computer Science and Engineering department.</p>
-
-        <hr>
-        <ul class="index">
-            <li class="am">&nbsp;<a href="#about"> Education</a></li>
-            <li class="pro">&nbsp;<a href="#projects"> Projects</a></li>
-            <li class="sk">&nbsp;<a href="#skills"> Skills</a></li>
-            <li class="con">&nbsp;<a href="#contacts"> Contact</a></li>
-            <li class="res">&nbsp;<a href="#resume"> Resume</a></li>
-        </ul>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="content">
-            <font class="name" style="font-size: 45px;"><b>PALAK PRIYA</b></font><br><hr>
-            <font class="subscript" style="font-size: 15px;">palak19priya@gmail.com | 8102578561</font>
+    </nav>
 
-            <!-- HOME CONTENT-->
-            <p class="pc">Hi! I'm Palak Priya, a dedicated and passionate third-year B.Tech student in Computer Science Engineering at Jain (Deemed-to-be-University), Bangalore.<br> I have gained hands-on experience in HTML, CSS, JavaScript, MySQL, PHP. I am currently working on my skills implementing Machine Learning algorithms. I also have a knowledge of AI, algorithms, theory of computation, web technologies, software architecture, cloud computing, RDBMS, OOP, operating systems, and data structures.<br><br> Welcome to my portfolio, where you can explore my skills, projects, and professional journey.</p>
-            <marquee>"Transforming Ideas into Reality through Code and Design."</marquee>
-<p id="about"></p>
-            <!-- ABOUT ME -->
-            <h2>Educational Background</h2>
-                <p><ul>
-                    <li>B.Tech degree in CSE:
-                    <font style="color: rgb(6, 191, 6);">&ensp; <u>  Pursuing</u></font></li>
-                    &emsp;Jain (Deemed-to-be-University)<br>
-                    &emsp;Bangalore, Karnataka (562112)
-                    </p>
-                    <li>PU: 11<sup>th</sup> and 12<sup>th</sup>- 
-                    PCM stream: <font style="color: rgb(3, 101, 3);">&ensp;<u> Completed</u></font></li>
-                    &emsp;DAV Public School<br> 
-                    &emsp;Patna, Bihar (801105)<br>
-                    &emsp;CBSE Board<br>
-                    &emsp;Marks: 82.6%
-                    </p>
-                    <li>Till std. 10<sup>th</sup>: <font style="color: rgb(3, 101, 3);">&ensp;<u>Completed</u></font></li>
-                    &emsp;Radiant International School<br> 
-                    &emsp;Patna, Bihar (801105)<br>
-                    &emsp;CBSE Board<br>
-                    &emsp;Marks: 91.8%
-                </ul></p>
-<p id="projects"></p>
-                <h2>Projects</h2>
-                <ul>
-                    <li>Unichoice (HTML, CSS, JavaScript, PHP, SQL)</li>
-                    <p class="pc">Since 1<sup>st</sup> year of my college, I've been working with my team on a project which aims at addressing a real world challenge.It is a college/university finder web application for students after they've completed their PU.<br>So far, we have published a research <a href="https://drive.google.com/file/d/1-kAowV5Ss12WtD-cTQl6fQQ6yVv8RWLE/view?usp=drive_link" target="_blank">paper</a> on our findings about the topic. In the application, we have developed the front-and and are working on the database and back-end simultaneously.<br>
-                    <a href="https://palak19priya.github.io/UniChioce/" target="_blank">Github Link</a> </p>
-                    <li>Novel Nook (HTML, CSS, JavaScript, PHP, SQL)</li>
-                    <p class="pc">An E-commerce website which sales novels of all genre. It has a login and register page, which are validated by JavaScript. It is connected to database using PHP and SQL. It also has a feature of 'TBR List' for registered users which helps them track their reading history.<br><a href="https://palak19priya.github.io/Novel_nook/" target="_blank">Visit Site</a></p>
-                    <li>Rock vs Mine Prediction System (Python)</li>
-                    <p class="pc">Implemented machine learning algorithm (logistic regression) to train the machine upon a set of sonar data so that it can predict mine or a rock.<br><a href="https://github.com/Palak19Priya/Rock-vs-Mine_Prediction" target="_blank">Visit Link</a></p>
-                    <li>Diabetes Prediction System (Python)</li>
-                    <p class="pc">Implemented machine learning algorithm (Support Vector Machine) to train the machine upon a set of patients' data so that it can predict a patient as diabetic or non-diabetic.<br><a href="https://github.com/Palak19Priya/Diabetes_Prediction" target="_blank">Visit Link</a></p>
-                    <li>House Price Prediction System (Python)</li>
-                    <p class="pc">Implemented machine learning algorithm (XGBoost) to train the machine upon a set of data containing the details of houses and their prices so that it can predict the price of new houses based on the relations established by the machine upon the data.<br><a href="https://github.com/Palak19Priya/House-price_Prediction" target="_blank">Visit Link</a></p>
-                    <li>ATM interface (Python)</li>
-                    <p class="pc">Developed an ATM interface using Python that enables users to perform banking operations like balance inquiry, deposits, and withdrawals, featuring a simple command-line interface for easy navigation and use.<br><a href="https://github.com/Palak19Priya/ATM-interface" target="_blank">GitHub Link</a></p>
-                    <li>Responsive seat selector (HTML, CSS, JavaScript)</li>
-                    <p class="pc">Developed an interactive web page using HTML, CSS, and JavaScript with features including seat selection, real-time price updates, dynamic recliner pricing, and local storage integration to enhance user experience and ensure data persistence.<br><a href="https://palak19priya.github.io/Movie-Seat-Selector/" target="_blank">Visit Site</a></p>
-                    <li>A To-Do-List (HTML, CSS, JavaScript)</li>
-                    <p class="pc"> A functional and user-friendly To-Do List web page. The page allows users to add, delete, and mark tasks as complete. It also have the ability to prioritize tasks, organize them into categories, and set due dates.<br><a href="https://palak19priya.github.io/TO-DO-LIST/" target="_blank">Visit Site</a></p>
-                    <li>Tic-Tac-Toe Game (HTML, CSS, JavaScript)</li>
-                    <p class="pc"> Designed and implemented a Tic Tac Toe game with an intuitive interface, focusing on efficient gameplay logic and a seamless user experience, ensuring cross-platform compatibility using HTML, CSS, and JavaScript.<br><a href="https://palak19priya.github.io/Tic-Tac-Toe-Game/" target="_blank">Visit Site</a></p>
-                    <li>Savory Haven (HTML, CSS, JavaScript)</li>
-                    <p class="pc"> Responsive web page for hypothetical restaurant to enhance its online presence and promote its services, showcasing appealing design elements and user-friendly navigation for effective advertising and publicity.<br><a href="https://palak19priya.github.io/Savory-Haven/" target="_blank">Visit Site</a></p>
-                </ul>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                <span class="highlight">Palak Priya</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text"></span>
+                </p>
+                <p class="hero-description">
+                    Passionate web developer creating innovative digital experiences with modern technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    <a href="https://drive.google.com/file/d/1UO5VzkhU6Kt4wQFFpcA6xs-OpDwaC6La/view?usp=sharing" class="btn btn-resume" onclick="downloadResume()">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="resPic2.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <p id="skills"></p>
-            <h2>Skills</h2>
-            <p><ul>
-                <li><u>Technical skills</u></li>
-                
-                    <ul>
-                        <li>HTML, CSS</li>
-                        <li>JavaScript</li>
-                        <li>Python</li>                    
-                        <li>SQL</li>               
-                        <li>PHP</li>
-                </ul>
-                </p>
-                <li><u>Soft Skills</u></li> 
-                <p class="pc">
-                    <ul>
-                        <li>Good communication skills</li>
-                        <li>Leadership experience</li>
-                        <li>Computer proficiency</li>
-                        <li>Active listening</li>
-                        <li>Project planning and collaboration</li>
-                        <li>Collaboration talent</li>
-                    </ul>
-                </p>
-                <li><u>Certifications and Courses</u></li>
-                <p class="pc">
-                    <ul>
-                        <li>Coursera <a href="https://coursera.org/share/494958140a8d9e25d9965dbc9e9b83ae" target="_blank"> Certificate</a> in Python Basics</li>
-                        <li>Coursera <a href="https://coursera.org/share/9cf4f492ad1f6046840ce624d2638522" target="_blank"> Certificate</a> in The Art of the Job Interview</li>
-                        <li>Coursera <a href="https://coursera.org/share/c4b9a87a7db9e22ae3ace2141061c382" target="_blank"> Certificate</a> in An Intuitive Introduction to Probability</li>
-                        <li>Coursera <a href="https://coursera.org/share/8325c42b20643bddc78d3b9405ef99f7" target="_blank"> Certificate</a> in Introduction to Java</li>
-                        <li>Coursera <a href="https://coursera.org/share/78216a0e2a6033e98a5779786a20e1f7" target="_blank"> Certificate</a> in Introduction to Electronics</li>
-                        <li>Coursera <a href="https://coursera.org/share/7beeb82562cf351961a61005f0bc140b" target="_blank"> Certificate</a> in Introduction to Chemistry: Structures and Solutions</li>
-                        <li>Coursera <a href="https://coursera.org/share/6193b9bc4e215f96c4f8a7d418e720a0" target="_blank"> Certificate</a> in C for Everyone: Structured Programming</li>
-                        <li>Coursera <a href="https://coursera.org/share/0625f15bdb00ab53ecd2082eaef4e3f9" target="_blank"> Certificate</a> in An Introduction to Interactive Programming in Python (Part 2)</li>
-                        <li>Coursera <a href="https://coursera.org/share/971d353ed93b50fa8e4d0ccf4a6e35d3" target="_blank"> Certificate</a> in Matrix Algebra for Engineers</li>
-                        <li>Coursera <a href="https://coursera.org/share/037e4573cd2275f4eb9c668b6b433be9" target="_blank"> Certificate</a> in Autodesk Fusion 360 Integrated CAD/CAM/CAE</li>
-                        <li>Coursera <a href="https://coursera.org/share/4dd2b0e8592472eec9865c6dd497071c" target="_blank"> Certificate</a> in Business English: Networking</li>
-                        <li>Coursera <a href="https://coursera.org/share/cc35916f0a3a63b235c16b1abdf297a3" target="_blank"> Certificate</a> in Linux Fundamentals</li>
-                        <li>Coursera <a href="https://coursera.org/share/3b93c79d90e8f5639fa7e986cafcb9d8" target="_blank"> Certificate</a> in Computational Thinking For problem Solving</li>
-                        <li>Coursera <a href="https://coursera.org/share/3b3af3919706bee3b0870265d6938b99" target="_blank"> Certificate</a> in How Things Work: An Introduction to Physics</li>
-                    </ul>
-                </p>
-            </ul></p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my background and experience</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Summary</h3>
+                    <p>
+                        Computer Science and Engineering student with hands-on experience in full stack web development using
+HTML, CSS, JavaScript, React.js, Node.js and MongoDB. Familiar with backend frameworks, version control
+(Git/GitHub) and RESTful API development. Skilled in building responsive applications with secure data
+handling. 
+                    </p>
+                    <p>
+                        Quick learner with a strong interest in building user-friendly web applications.
+                        Passionate about building creative web pages and applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey and continuous learning</p>
+            </div>
+            <div class="timeline">
+                <!-- 1st item -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science and Engineering</h3>
+                        <p class="institution">Jain University, Faculty of Engineering and Technology, Bengaluru</p>
+                        <p class="duration">2022 - 2026</p>
+                        <p class="description">
+                            CGPA: 8.4
+                        </p>
+                    </div>
+                    <div class="timeline-image timeline-image-right">
+                        <img src="https://content.jdmagicbox.com/comp/ramanagara/p1/9999pxx80.xx80.170927173925.y3p1/catalogue/jain-university-school-of-engineering-and-technology-ju-set-jakkasandra-ramanagara-engineering-colleges-xd20kes01g.jpg" alt="Jain University">
+                    </div>
+                </div>
+                <!-- 2nd item-->
+                <div class="timeline-item">
+                    <div class="timeline-image timeline-image-left">
+                        <img src="https://davkhagaul.org/File/5647/Slider_71e75c8e-6874-4846-9ed7-7c8827bfef74_School%20Pic.jpg" alt="DAV Public School" >
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>PU- 12th std.</h3>
+                        <p class="institution">DAV Public School, Patna<br>
+                            CBSE
+                        </p>
+                        <p class="duration">2020 - 2022</p>
+                        <p class="description">
+                            PCM- Physics, Chemistry, Mathematics<br>
+                            Percentage: 82.6%
+                        </p>
+                    </div>
+                </div>
+                <!-- 3rd item-->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>10th std.</h3>
+                        <p class="institution">Radiant International School, Patna<br>CBSE</p>
+                        <p class="duration">2020</p>
+                        <p class="description">
+                            Percentage: 91.8%
+                        </p>
+                    </div>
+                    <div class="timeline-image timeline-image-right">
+                        <img src="https://content.jdmagicbox.com/comp/patna/dc/0612px612.x612.090622164346.p7n2dc/catalogue/radiant-international-school-cantt-road-patna-schools-j5k77r.jpg" alt="Radiant International School">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Showcase of my recent work and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://www.fhoke.com/wp-content/uploads/2023/08/10-Best-Blog-Designs.webp" alt="Blogging Platform">
+                        <div class="project-overlay">
+                            <a href="https://palak19priya.github.io/Book-Blog/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Palak19Priya/Book-Blog" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Book Blog</h3>
+                        <p>A responsive blogging platform for book readers with secure user login/authentication.
+Integrated a MongoDB database for dynamic storage of user posts.
+Integrated ML assistance to enhance the writing experience.</p>
+                        <div class="project-tech">
+                            <span>HTML, CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://biglinden.com/wp-content/uploads/2023/05/editorial-blog-post-layout-universities-web-design-inspiration-for-university-websites-1024x444.webp" alt="College search website">
+                        <div class="project-overlay">
+                            <a href="https://palak19priya.github.io/UniChioce/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Palak19Priya/UniChioce" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>UniChoice</h3>
+                        <p>Designed and developed a responsive web app to help students find suitable universities.
+Feature of filtering universities using dynamic JavaScript-based filters.
+Prioritized UX and intuitive UI using JS for smoother interactions.</p>
+                        <div class="project-tech">
+                            <span>HTML, CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.prismic.io/milanote/8b08a908-aea5-4b70-9883-371e2a6f65d6_Novel-moodboard-example.png?auto=compress%2Cformat&w=1140" alt="Weather Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://palak19priya.github.io/Novel_nook/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Palak19Priya/Novel_nook" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Novel Nook</h3>
+                        <p>Developed an e-commerce site platform with user authentication and product listing.
+Connected MySQL for user and inventory management with PHP backend logic.
+Ensured mobile responsiveness and consistent design across pages.</p>
+                        <div class="project-tech">
+                            <span>HTML, CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            <h2 id="contacts">Contacts</h2>
-            <p class="pc">
-            <i class="ri-mail-line"></i> Email id: palak19priya@gmail.com<br>
-            <i class="ri-contacts-book-3-line"></i> Phone no : 8102578561<br>
-            <i class="ri-whatsapp-line"></i> WhatsApp no :8102578561<br>
-            <i class="ri-linkedin-box-fill"></i> LinkedIn profile: <a href="https://www.linkedin.com/in/palak-priya-9032aa25a/" target="_blank">LinkedIn</a> <br>
-            <i class="ri-github-fill"></i> GitHub link: <a href="https://github.com/Palak19Priya" target="_blank">GitHub</a> <br>
-            <i class="ri-instagram-line"></i> Instagram handle: <a href="https://www.instagram.com/priya_palak__/" target="_blank">Instagram</a> <br></p>
-            <h2 id="resume">Resume</h2>
-            <p>Here's a file of my <a href="https://drive.google.com/file/d/1E09TGIaVw8Wu9GG14cgNPT_S4gl_-wVF/view?usp=drive_link" target="_blank">resume</a>.</p>
+            <div class="mini-projects">
+                <h3>Mini Projects</h3>
+                <div class="mini-projects-grid">
+                    <div class="mini-project">
+                        <h4>ATM Interface</h4>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="mini-project">
+                        <h4>Todo List</h4>
+                        <div class="tech-stack">
+                            <span>HTML, CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="mini-project">
+                        <h4>Responsive Seat Selector</h4>
+                        <div class="tech-stack">
+                            <span>HTML, CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="mini-project">
+                        <h4>Savory Haven- Restraunt website</h4>
+                        <div class="tech-stack">
+                            <span>HTML, CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="mini-project">
+                        <h4>Tic-Tac-Toe Game</h4>
+                        <div class="tech-stack">
+                            <span>HTML, CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="mini-project">
+                        <h4>Rock vs Mine Prediction ML model</h4>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="mini-project">
+                        <h4>House Price Prediction ML model</h4>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="mini-project">
+                        <h4>Diabates Prediction ML model</h4>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="45"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="skills-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PHP</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Database Technologies</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MongoDB</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        
+                        <div class="tool-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-wordpress"></i>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Communication skills</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Project planning</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-comment-dots"></i>
+                            <span>Active listening</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Leadership experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates</h2>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>React Basics</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">Meta</p>
+                            <p class="date">Issued: July 2025</p>
+                            <p class="credential-id">from Coursera</p>
+                        </div>
+                        <p class="description">Covers building interactive React apps using reusable components, props, and forms, with a focus on scalable, maintainable project structure.
+                        </p><br>
+                        <div class="certificate-actions">
+                            <a href="https://coursera.org/verify/49KX3T0KZGWO" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Artificial Intelligence Fundamentals</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">IBM</p>
+                            <p class="date">Issued: August 2024</p>
+                            <p class="credential-id">from IBM SkillsBuild</p>
+                        </div>
+                        <p class="description">Covers core AI concepts and capabilities, including machine learning, deep learning, neural networks, and NLP, with exposure to ethical considerations, AI applications like chatbots.
+                        </p><br>
+                        <div class="certificate-actions">
+                            <a href="https://www.credly.com/badges/8ce3f9cc-9901-46bb-8ec9-83f1e2fab7be/public_url" target="_blank" class="cert-link">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Information Technology Fundamentals</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">IBM </p>
+                            <p class="date">Issued: August 2024</p>
+                            <p class="credential-id">from IBM SkillsBuild</p>
+                        </div>
+                        <p class="description">Covers essential IT support skills, including customer service, hardware, networking, security basics, remote desktop services.
+                        </p><br>
+                        <div class="certificate-actions">
+                            <a href="https://www.credly.com/badges/1b6c74e1-904b-4eef-940d-de9000194e2c/public_url" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Explore Machine Learning using Python</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">Infosys</p>
+                            <p class="date">Issued: April 2025</p>
+                            <p class="credential-id">from Infosys Springboard</p>
+                        </div>
+                        <p class="description">Covers identifying ML problem types, applying classification, regression, and clustering algorithms, using model validation techniques, and understanding artificial neural networks.
+                        </p><br>
+                        <div class="certificate-actions">
+                            <a href="https://drive.google.com/file/d/1x6fynab2IN_2Y6tQ2mZbDPxYZ2vD40gn/view?usp=sharing" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Python Basics</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">University of Michigan</p>
+                            <p class="date">Issued: January 2025</p>
+                            <p class="credential-id">from Coursera</p>
+                        </div>
+                        <p class="description">Covers Python 3 fundamentals, including conditionals, loops, and data structures, with hands-on practice through drawings and debugging exercises.
+                        </p><br>
+                        <div class="certificate-actions">
+                            <a href="https://coursera.org/verify/M98AHCBJJJ44" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>An Introduction to Interactive Programming in Python (Part 2)</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">Rice Univeristy</p>
+                            <p class="date">Issued: May 2023</p>
+                            <p class="credential-id">from Coursera</p>
+                        </div>
+                        <p class="description">Covers core programming concepts such as OOP, data structures, and debugging, with a focus on interactive design, event-driven programming and UI using Python.
+
+                        </p><br>
+                        <div class="certificate-actions">
+                            <a href="https://coursera.org/verify/HM25K7MVJUVQ" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>                
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Introduction to Java</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">Learn Quest</p>
+                            <p class="date">Issued: March 2023</p>
+                            <p class="credential-id">from Coursera</p>
+                        </div>
+                        <p class="description">Covers Java product offerings and benefits, along with foundational skills in Java syntax, data types, expressions, operators, and control flow for writing basic programs.
+                        </p><br>
+                        <div class="certificate-actions">
+                            <a href="https://coursera.org/verify/RDD2P75PBPYM" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Computational Thinking for Problem Solving</h3>
+                        <div class="certificate-details">
+                            <p class="issuer">Penn University of Pennsylvania</p>
+                            <p class="date">Issued: May 2023</p>
+                            <p class="credential-id">from Coursera</p>
+                        </div>
+                        <p class="description">Covers foundational computing concepts like computational thinking, algorithms, and data structures, with emphasis on problem solving, pseudocode, debugging, and basic hardware understanding.</p><br>
+                        <div class="certificate-actions">
+                            <a href="https://coursera.org/verify/KDR79ETSCQAY" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+            <div class="contact-content">
+                <div class="contact-simple">
+                    <div class="contact-intro">
+                        <h3>Let's Connect!</h3>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <button class="email-btn" onclick="openGmail()">
+                                    palak19priya@gmail.com
+                                    <i class="fas fa-external-link-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+15551234567" class="phone-link">+91 8102578561</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h4>Social Media</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/palak-priya-9032aa25a/" class="social-link linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Palak19Priya" class="social-link github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">    
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <script src="script.js"></script>
 </body>
 </html>
-

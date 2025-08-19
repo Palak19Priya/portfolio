@@ -244,7 +244,7 @@ function downloadResume() {
     link.download = 'Palak_Priya_Resume.pdf';
     
     // Simulate download (replace with actual file)
-    alert('Resume download would start here. Please add your actual resume file to the project.');
+    alert('Redirecting to resume...');
     
     // Uncomment the lines below when you have an actual resume file
     // document.body.appendChild(link);
@@ -310,5 +310,6 @@ function preloadImages() {
         img.src = src;
     });
 }
+
 
 preloadImages();

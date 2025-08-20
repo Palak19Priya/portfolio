@@ -314,3 +314,68 @@ function preloadImages() {
 
 preloadImages();
 
+
+// Improved smooth cursor trail effect (pink/purple/lavender shades)
+let mouseTrail = [];
+const trailLength = 16; // More dots for smoother trail
+
+let mouseX = 0, mouseY = 0;
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+// Animation loop for smooth trailing
+function animateTrail() {
+    // Interpolate last trail point towards mouse position
+    if (mouseTrail.length === 0) {
+        mouseTrail.push({ x: mouseX, y: mouseY });
+    } else {
+        const last = mouseTrail[mouseTrail.length - 1];
+        const dx = mouseX - last.x;
+        const dy = mouseY - last.y;
+        mouseTrail.push({
+            x: last.x + dx * 0.25, // Smoother interpolation
+            y: last.y + dy * 0.25
+        });
+    }
+    if (mouseTrail.length > trailLength) {
+        mouseTrail.shift();
+    }
+
+    // Remove existing dots
+    const existingDots = document.querySelectorAll('.trail-dot');
+    existingDots.forEach(dot => dot.remove());
+
+    // Draw trail
+    mouseTrail.forEach((point, index) => {
+        const dot = document.createElement('div');
+        dot.className = 'trail-dot';
+        const colors = [
+            'rgba(184, 50, 128,',   // Deep Pink
+            'rgba(109, 40, 217,',   // Deep Purple
+            'rgba(224, 170, 255,',  // Light Lavender
+            'rgba(250, 113, 205,',  // Pink
+            'rgba(106, 17, 203,',   // Purple
+        ];
+        const color = colors[index % colors.length];
+        dot.style.cssText = `
+            position: fixed;
+            width: ${12 - index * 0.5}px;
+            height: ${12 - index * 0.5}px;
+            background: ${color} ${(index + 1) / trailLength});
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            left: ${point.x - (6 - index * 0.25)}px;
+            top: ${point.y - (6 - index * 0.25)}px;
+            opacity: ${(trailLength - index) / trailLength};
+            transition: none;
+            will-change: transform, opacity;
+        `;
+        document.body.appendChild(dot);
+    });
+
+    requestAnimationFrame(animateTrail);
+}
+animateTrail();
